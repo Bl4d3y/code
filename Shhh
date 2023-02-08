@@ -1,0 +1,73 @@
+(function(){
+  
+  var launchNum = parseInt(prompt("What Hack you like to do? \n 1): Blooket \n 2): Prodigy \n 3): Cookie Clicker \n 4): Launch Cloaked Tab \n   \n Made by G0D Unblocker")); 
+  var win = null;
+  var url = null;
+  var iframe = null;
+  
+  switch (launchNum){
+ 
+    case 1:
+      win = window.open();
+      
+      url = 'https://github.com/therealgliz/blooket-hacks';
+      
+      iframe = win.document.createElement('iframe');
+      
+iframe.style="position:fixed;width:100vw;height:100vh;top:0px;left:0px;right:0px;bottom:0px;z-index:2147483647;background-color:white;border:none;";
+      
+      iframe.src = url;
+      
+      win.document.body.appendChild(iframe);
+      
+      break;
+  
+  case 2:
+      win = window.open();
+      
+      url = 'https://github.com/rxzyx/prodigy-hack';
+      
+      iframe = win.document.createElement('iframe');
+      
+iframe.style="position:fixed;width:100vw;height:100vh;top:0px;left:0px;right:0px;bottom:0px;z-index:2147483647;background-color:white;border:none;";
+      
+      iframe.src = url;
+      
+      win.document.body.appendChild(iframe);
+      
+      break;
+  
+  case 3:
+      win = window.open();
+      
+      url = 'https://github.com/kyler69/Cookie-hacks';
+      
+      iframe = win.document.createElement('iframe');
+      
+iframe.style="position:fixed;width:100vw;height:100vh;top:0px;left:0px;right:0px;bottom:0px;z-index:2147483647;background-color:white;border:none;";
+      
+      iframe.src = url;
+      
+      win.document.body.appendChild(iframe);
+      
+      break;
+  
+  default:
+      url = prompt("Enter website url for cloaked tab \nMade by G0D Unblocking: https://sites.google.com/view/g0dunblocking/games");
+      
+      win = window.open();
+      
+      iframe = win.document.createElement('iframe');
+      
+iframe.style="position:fixed;width:100vw;height:100vh;top:0px;left:0px;right:0px;bottom:0px;z-index:2147483647;background-color:white;border:none;";
+      
+      if(url.includes("https://") || url.includes("http://")){
+        iframe.src = url;
+      }else
+      {
+        iframe.src = "https://" + url;
+      }
+      win.document.body.appendChild('iframe');
+      break;
+  }
+})();
